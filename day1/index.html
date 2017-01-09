@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/5.0.0/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <title>扁平化博客风格</title>
+</head>
+<body>
+<header>
+    <nav>
+        <div class="left-container">
+            <img src="image/envolp.png"/>
+        </div>
+        <div class="right-container">
+            <ul>
+                <li><a href="#">登录</a></li>
+                <li><a href="#">注册</a></li>
+                <li><a href="#" id="header-menu" class="menu click_tracking" data-label=""></a> </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<section id="banner">
+    <div class="frame-video">
+        <div class="video-overlay"></div>
+        <video autoplay="autoplay" loop="loop" poster="https://cdn1.evernote.com/evernote.com/img/homepage/homepage-hero-video-desktop-still@2x.jpg">
+            <source class="webm" type="video/webm" src="https://cdn1.evernote.com/evernote.com/video/homepage/homepage-hero-video@2x.webm">
+            <source class="mp4" type="video/mp4" src="https://cdn1.evernote.com/evernote.com/video/homepage/homepage-hero-video@2x.mp4">
+        </video>
+    </div>
+    <div class="banner-content">
+        <h1>记住一切</h1>
+        <p class="description">
+            现代生活喧嚣繁杂，印象笔记帮你轻松简化一切，让生活更美好，让工作更省力。
+        </p>
+        <div class="sign-up-form">
+            <form id="create-account">
+                <div class="form-items">
+                    <fieldset>
+                        <legend>注册表格</legend>
+                        <div class="field-item">
+                            <label for="email"></label>
+                            <input type="email" id="email" name="email" placeholder="邮箱">
+                        </div>
+                        <div class="field-item">
+                            <label for="password"></label>
+                            <input type="password" id="password" name="password" placeholder="密码">
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="form-button">
+                    <p class="legal">
+                        点击注册表明你同意本<a href="#">服务条款</a>和<a href="#">隐私条款</a>
+
+                    </p>
+                    <button class="register">免费注册</button>
+                </div>
+                <p>
+                    或<a href="#">登录</a>
+                </p>
+
+
+            </form>
+            <div id="scroll-arrow"></div>
+        </div>
+    </div>
+
+</section>
+<section class="social-proof">
+    <div class="row">
+        <p>
+            与<span class="green">数亿</span>名用户一起，用印象笔记成就更多
+        </p>
+    </div>
+</section>
+<section id="newstory">
+
+</section>
+<footer></footer>
+<script>
+    $("#scroll-arrow").click(function (event) {
+       $("html,body").animate({scrollTop:$("#newstory").offset().top},500);
+    });
+</script>
+</body>
+
+
+</html>
+
+
+

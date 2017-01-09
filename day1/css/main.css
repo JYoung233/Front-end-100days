@@ -1,0 +1,200 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-size: 0.75rem;
+    line-height: 1.3;
+    text-rendering: optimizeLegibility;
+
+}
+h1,h2,body.form,label
+{
+    font-family: Hiragino Sans GB,STHeiti,Microsoft Yahei,sans-serif !important;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+nav{
+    background: #ffffff;
+    height: 80px;
+}
+
+nav .left-container {
+    float: left;
+    position: relative;
+    /*margin-left: 6px;*/
+    top: 50%;
+    transform: translate(0,-50%);
+}
+
+nav .left-container img {
+
+}
+
+
+
+.right-container {
+    float: right;
+    position: relative;
+    top: 50%;
+    transform: translate(0,-50%);
+    font-size: 1rem;
+
+}
+
+nav .right-container ul li {
+    list-style: none;
+    display: inline-block;
+    padding-right: 10px;
+    height:inherit;
+}
+nav .right-container ul li a {
+    text-decoration: none;
+    color: #d3dce4;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: underline;
+
+}
+
+section,header{
+    display: block;
+}
+
+#banner {
+    background: #3c763d;
+    height: auto;
+    width: 100%;
+    position: relative;
+    bottom: -4px;
+
+}
+
+#banner .video-overlay {
+    position: absolute;
+    top:0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.3);
+    z-index: 2;
+}
+
+#banner .banner-content h1 {
+    margin:0;
+    font-size: 2rem;
+}
+
+#banner .banner-content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    text-align: center;
+    z-index: 3;
+    color: #ffffff;
+}
+
+#banner .banner-content .description {
+    font-size: 1.5rem;
+}
+
+#banner input {
+    height: 36px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-radius: 3px;
+    padding: 0 10px;
+    outline: none;
+    line-height: 36px;
+
+}
+#banner .banner-content fieldset {
+    border: none;
+    margin-bottom: 15px;
+    overflow: visible;
+}
+
+#banner .banner-content fieldset legend {
+    display: none;
+}
+
+#banner .banner-content .field-item {
+    float: left;
+    width: 48.5%;
+    border: 0;
+}
+
+#banner .banner-content .field-item:first-of-type {
+    margin-right: 3%;
+}
+
+#banner .form-button .register {
+    display: block;
+    margin-bottom: 15px;
+    width: 100%;
+    text-decoration: none;
+    border-radius: 4px;
+    height: 55px;
+}
+
+.register {
+    background: #2dbe60;
+    color: #ffffff;
+    letter-spacing: 1px;
+    font-size: 1rem;
+    border: none;
+
+}
+#banner .frame-video {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.social-proof {
+    width: 100%;
+    background: #414141;
+    margin:0 auto;
+    padding: 20px 0;
+    color: #ffffff;
+}
+
+.row {
+    width: 1160px;
+    margin: 0 auto;
+    max-width: 100%;
+    text-align: center;
+    color: aliceblue;
+    font-size: medium;
+}
+
+.social-proof .green {
+    color: #2dbe60;
+}
+
+#scroll-arrow {
+    margin: 0 auto;
+    width: 76px;
+    height: 76px;
+    background: url("https://www.yinxiang.com/media/img/homepage-redesign/hover-arrow@1x.png");
+    animation: small 2.8s steps(95) infinite;
+    cursor: pointer;
+    z-index: 3;
+    margin-top: 80px;
+}
+
+#newstory {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    background: #2dbe60;
+    height: 700px;
+
+}
+
