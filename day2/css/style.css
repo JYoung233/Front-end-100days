@@ -6,16 +6,26 @@ html,body{
 }
 
 .cotainer {
-    width: 800px;
-    height: 400px;
+    width: 1000px;
+    height: 600px;
     margin: 100px auto;
     background-color: #fff;
     box-shadow: 0 1px 3px rgba(0,0,0,.1);
+    text-align: center;
+}
+
+.content_container {
+    width:800px;
+    height:400px;
+    background-color: inherit;
+    display: inline-block;
+    /*transform:translate(50px,0) ;*/
+
 }
 
 .tab-wrapper{
     position: relative;
-    width: 800px;
+    width: auto;
     height: 60px;
     border-bottom: 1px solid #dbdbdb;
     /*background-color: #33344a;*/
@@ -56,19 +66,44 @@ html,body{
     position: absolute;
     top: 80px;
     left: 0;
-    width: 740px;
+    width: inherit;
     color: #999;
     font-size: 14px;
     line-height: 1.618em;
     background-color: #fff;
     opacity: 0;
     transition: transform .5s, opacity .7s;
-    transform: translateY(20px);
-
+    transform: translateX(800px);
 }
 
 img {
     width: 800px;
     height: auto;
+
+
+}
+
+#left {
+    float: left;
+    padding: 150px 0;
+    display: inline-block;
+
+
+}
+
+.arrow img{
+    width: 50px;
+    height: 50px;
+
+}
+
+#right {
+    float: right;
+    padding: 150px 20px;
+    display: inline-block;
+}
+
+.arrow img:hover {
+    cursor: pointer;
 }
 

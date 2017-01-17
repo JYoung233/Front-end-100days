@@ -3,15 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="node_modules/jquery/dist/jquery.js"></script>
     <title>旅游风景介绍</title>
 </head>
 <body>
 <div class="cotainer">
+    <div class="content_container">
     <div class="tab-wrapper">
         <!--tab section 1-->
         <input type="radio" name="tab-radio" class="tab-radio" id="tab-radio-1" checked>
         <label for="tab-radio-1" class="tab-handler tab-handler-1">大阪</label>
-        <div class="tab-content tab-content-1">
+        <div class="tab-content tab-content-2">
             <img src="image/1.png">
         </div>
         <input type="radio" name="tab-radio" class="tab-radio" id="tab-radio-2">
@@ -33,9 +35,31 @@
         <label for="tab-radio-5" class="tab-handler tab-handler-5">曼谷</label>
         <div class="tab-content tab-content-5">
             <img src="image/5.png">
-        </div></div>
+        </div>
+    </div>
+    </div>
+    <div id="left" class="arrow">
+        <img src="image/back.png">
 
     </div>
+    <div id="right" class="arrow">
+        <img src="image/right.png">
+    </div>
 
+</div>
+<script type="text/javascript">
+    var left=document.getElementById("left");
+    var right=document.getElementById("right");
+    var radio1=document.getElementById("tab-radio-1");
+    var radio1=document.getElementById("tab-radio-2");
+    var radio1=document.getElementById("tab-radio-3");
+    var radio1=document.getElementById("tab-radio-4");
+    var radio1=document.getElementById("tab-radio-5");
+    $(document).ready(function () {
+        $("#left").click(function () {
+
+        });
+     });
+</script>
 </body>
 </html>
