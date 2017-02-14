@@ -1,0 +1,150 @@
+h1,h3,p,a,button {
+    
+}
+
+.onepage {
+    height: 750px;
+}
+
+.onepage-bg {
+    height: 800px;
+    width:100%;
+    position: absolute;
+    background-position: center center;
+    background-size: cover;
+    
+}
+
+#onepagebg{
+    background-image: url("images/1.jpg");
+}
+
+.headh1content {
+    margin-top: 150px;
+    line-height: 75px;
+}
+
+.title-text {
+    margin-left: 50px;
+}
+
+.headfontsize h1 {
+    font-size: 50pt;
+    color: #ffffff;
+}
+
+.headfontsize p {
+    color: #ffffff;
+    margin-top: 50px;
+    line-height:33px ;
+}
+.twopage {
+    padding: 2px 0 0 2px;
+    height: auto;
+    background-image: url("images/2.jpg");
+    position: relative;
+}
+
+.twopage-text {
+    width: 100%;
+    text-align: center;
+
+}
+
+.twopage-text-h1 {
+    margin-bottom: 0;
+    letter-spacing: 2px;
+    font-size: 20pt;
+}
+
+.twopage .row {
+    margin-right: 0px;
+    margin-left: 0px;
+    /*左右不能滑动*/
+}
+
+.twopage-courses {
+    float: left;
+    background: #ffffff;
+    padding: 0 2px 2px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.twopage-courses >a {
+    width: 100%;
+    height: 100%;
+    float: left;
+    position: relative;
+    text-align: center;
+}
+
+.classicon h3 {
+    margin-top: 120px;
+    color: #d1e973;
+}
+
+.classicon h1 {
+    color: #fff5e1;
+}
+
+.classicon {
+    width:100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #fff;
+    opacity: 0;
+}
+
+.classicon:hover {
+    background: #1eb450;
+    opacity: 0.9;
+    transition: opacity 0.5s;
+    -webkit-transition: opacity 0.5s;
+}
+
+.twopagebtn {
+    width: 100%;
+    margin: 0 auto;
+    /*居中*/
+    text-align: center;
+}
+
+#twopage-easy {
+    margin: 50px 0;
+}
+
+.threepage {
+    width: 100%;
+    height: 800px;
+    position: absolute;
+}
+
+.threepage-bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+#threepagebg {
+    background-image: url("images/3.jpg");
+}
+
+.threepagecontent {
+    width: 100%;
+    margin:0 auto;
+    text-align: center;
+    color: #ffffff;
+}
+
+.threepagebtncontent {
+    margin-top: 450px;
+}
+
+
