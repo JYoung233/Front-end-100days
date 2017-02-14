@@ -3,6 +3,7 @@
  * box-sizing:border-box 将border的长度算进padding的值中
  * overflow:hidden 将超出width的部分隐藏起来
  * line－height 是指行高
+ * letter-spacing 是指字间距
  * display: inline-block 行内元素，可以将列表转为水平
  * letter－spacing:字间距
  * text-decoration:字体样式
