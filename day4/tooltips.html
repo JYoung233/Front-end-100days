@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <title>工具提示</title>
+</head>
+<body>
+<div class="container">
+    <p class="muted" style="margin-bottom: 0">
+        欢迎学习<a id="myTip" href="#" data-toggle="tooltip" title="title" data-placement="left" data-original-title="www.bootstrap.com">bootstrap</a>
+    </p>
+</div>
+
+<script src="node_modules/jquery/dist/jquery.min.js">
+</script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script>
+    //需要额外进行初始化
+//    $("#myTip").tooltip("show");
+    $("[data-toggle='tooltip']").tooltip();
+</script>
+
+
+</body>
+</html>

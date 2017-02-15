@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <title>collapse</title>
+</head>
+<body>
+<div class="container">
+    <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample">
+        点击查看
+    </a>
+    <div class="collapse" id="collapseExample">
+       <div class="well">
+           Hello
+       </div>
+    </div>
+    <div class="panel-group" id="accordion" role="tablist">
+        <div class="panel panel-default" >
+            <div class="panel-heading" role="tab" id="headingOne">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">item1
+                    </a>
+                </h4>
+
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel">
+                <div class="panel-body">
+                    Hello
+                    Hello
+                    Hello
+                    Hello
+                    Hello
+                </div>
+
+            </div>
+
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingTwo">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">item2</a>
+                </h4>
+            </div>
+            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel">
+                <div class="panel-body">
+                    Hello
+                    Hello
+                    Hello
+                    Hello
+                    Hello
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+<script src="node_modules/jquery/dist/jquery.min.js">
+</script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script>
+    $("#accordion").on("hidden.bs.collapse",function(e){
+        alert("Hello");
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <title>测试使用bootstrap的组件及插件</title>
+    <style>
+        #mydiv {
+            width: 100px;
+            height: 200px;
+            background-color: red;
+            transition: width 2s;
+            -webkit-transition: width 2s;
+        }
+
+        #mydiv:hover{
+            width: 400px;
+        }
+    </style>
+</head>
+<body>
+<div id="mydiv">
+</div>
+<script>
+    document.getElementById("mydiv").addEventListener("transitionend",function (e) {
+        this.innerHTML="测试使用过渡效果，过渡效果已完成";
+    })
+</script>
+
+</body>
+</html>
