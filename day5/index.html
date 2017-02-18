@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="app.css">
+    <title>使用bootstrap的简单页面</title>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="70">
+    <header>
+        <div class="toolbar-top container-fluid">
+            <nav class="navbar navbar-inverse navbar-fixed-top " role="navigation">
+                <div class="container">
+                    <div class="collapse navbar-collapse js-navbar-scrollspy" id="myNav">
+                        <ul class="nav navbar-nav">
+                            <li role="presentation"><img src="images/logo_tran.png"></li>
+                            <li role="presentation" class="nav-block active"><a href="#Pageone">首页</a></li>
+                            <li role="presentation" class="nav-block"><a href="#Pagetwo">关于美林达</a></li>
+                            <li role="presentation" class="nav-block"><a href="#Pagethree">产品中心</a></li>
+                            <li role="presentation" class="nav-block"><a href="#Pagefour">新闻动态</a></li>
+                            <li role="presentation" class="nav-block"><a href="#Pagefive">服务专区</a></li>
+                            <li role="presentation" class="nav-block"><a href="#Pagesix">售后服务</a></li>
+                            <li role="presentation" class="nav-block"><a href="#Pageseven">联系我们</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </nav>
+
+        </div>
+    </header>
+    <div class="pageBody">
+        <section id="Pageone" style="margin-top: 50px">
+                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+                    </ol>
+                    <div class="carousel-inner jy-carousel-style">
+                        <div class="item active">
+                            <img src="images/1.png" alt="home1">
+                        </div>
+                        <div class="item">
+                            <img src="images/2.png" alt="home2">
+                        </div>
+                        <div class="item">
+                            <img src="images/3.png" alt="home3">
+                        </div>
+                        <div class="item">
+                            <img src="images/4.png" alt="home4">
+                        </div>
+                        <div class="item">
+                            <img src="images/5.png" alt="home5">
+                        </div>
+                    </div>
+                    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+
+
+        </section>
+        <section id="Pagetwo" class="container-fluid">
+            <div class="cmp-profile">
+                <div class="profile-head" style="margin: 0 auto;">
+                    <img src="images/logo_tran.png" style="display: inline-block; margin-left: 50px">
+                    <div class="head-des" style="display: inline-block; line-height: 20px; width:950px;margin-top: 20px; margin-left: 25px">
+                        <h3>关于美林达</h3>
+                        <p style="font-size:13px ">常州市美林达木业有限公司创建于2000年，是一家专业集强化木地板生产、研发、服务于一体的大型企业。公司位于中国地板之乡——常州崔桥，紧靠沪宁高速、常州机场，交通便利，环境清幽。
+                            近年来，美林达木业以持续性创新的经营理念和前瞻性眼光，凭借公司雄厚的研发能力，不断推出当今消费者最受欢迎的款式；同时为能满足多元的市场需求，公司利用本色本质的原材料推出了实木、多层实木系列，一经上市、便赢得广大用户的喝彩!</p>
+                    </div>
+                    <div class="profile-body container" style="margin-top: 50px">
+                        <div class="profile-body-top">
+                            <div class="profile-left" style="display: inline-block;width: 600px;">
+                                <h4>一经选择，一生放心</h4>
+                                <p>美林达木业自成立之初 ，全套引进与国际同步、现代化的木地板生产设备，运用美林达先进的管理技术，迅速建立起严格的质量管理体系，获得ISO9001和ISOl4001国际质量管理体系认证。旗下主营的卡伦地板，产品畅销全国各地并出口至韩国、加拿大、印度、西班牙、英国、比利时等多个国家和地区。地板的环保、耐磨指标及精度均达到国际产品之列，被评为“低碳环保领先品牌”、“地板十大质量品牌”、“中国品牌500强”；公司先后获得“中国绿色建材证书”、“中国环境标志证书”、“质量、服务、信誉”中国消费者可信产品证书等。</p>
+                                <p>“诚信合作、互利共赢”是美林达长期形成的经营理念，欢迎各届朋友与我们洽谈合作，美林达将会是您最值得信赖的长期合作伙伴！</p>
+                                <a class="btn btn-info learnmore-profile" href="#" role="button">点击这里 了解更多>></a>
+                            </div>
+                            <div class="profile-right">
+                                <img src="images/iso14001.png" style="width: 50%;display: inline-block">
+                                <img src="images/iso19001.png" style="width: 50%;display: inline-block;float: right">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section id="Pagethree" class="container production-info">
+            <div class="production-head">
+                <h2>产品中心<span class="glyphicon glyphicon-chevron-right"></span></h2>
+            </div>
+            <div class="row">
+                <div class="col-md-3 pro-border">
+                    <a href="#">
+                        <img src="images/Europe.png">
+                        <div class="production-des">
+                            <p>欧洲风情 麻绒面系列</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 pro-border">
+                    <a href="#">
+                        <img src="images/fugu.png">
+                        <div class="production-des">
+                            <p>复古鳄鱼皮系列</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 pro-border">
+                    <a href="#">
+                        <img src="images/tianyuan.png">
+                        <div class="production-des">
+                            <p>田园时光 镂铣高光系列</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 pro-border">
+                    <a href="#">
+                        <img src="images/ziran.png">
+                        <div class="production-des">
+                            <p>自然韵味 镂铣高光系列</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 pro-border">
+                    <a href="#">
+                        <img src="images/chunzhen.png">
+                        <div class="production-des">
+                            <p>纯真岁月 镂铣高光系列</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 pro-border">
+                    <a href="#">
+                        <img src="images/monai.png">
+                        <div class="production-des">
+                            <p>莫奈印象 手抓纹面系列</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 pro-border">
+                    <a href="#">
+                        <img src="images/gaoguang.png">
+                        <div class="production-des">
+                            <p>高光镂铣系列</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 pro-border">
+                    <a href="#">
+                        <img src="images/xibu.png">
+                        <div class="production-des">
+                            <p>西部牛仔 同步对花系列</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 pro-border">
+                    <a href="#">
+                        <img src="images/baluoke.png">
+                        <div class="production-des">
+                            <p>巴洛克 同步仿古系列</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 pro-border">
+                    <a href="#">
+                        <img src="images/liujin.png">
+                        <div class="production-des">
+                            <p>流金A系列</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 pro-border">
+                    <a href="#">
+                        <img src="images/tongbu.png">
+                        <div class="production-des">
+                            <p>同步拉丝系列</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 pro-border">
+                    <a href="#">
+                        <img src="images/yumu.png">
+                        <div class="production-des">
+                            <p>榆木系列</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 pro-border">
+                    <a href="#">
+                        <img src="images/luomandike.png">
+                        <div class="production-des">
+                            <p>罗曼蒂克 刨切纹面系列</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 pro-border">
+                    <a href="#">
+                        <img src="images/baluokegaoguang.png">
+                        <div class="production-des">
+                            <p>巴洛克 同步高光系列</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 pro-border">
+                    <a href="#">
+                        <img src="images/yuanmu.png">
+                        <div class="production-des">
+                            <p>原木本色 刨切纹面系列</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 pro-border">
+                    <a href="#">
+                        <img src="images/huangjia.png">
+                        <div class="production-des">
+                            <p>皇家贵族 艺术拼花系列</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section id="Pagefour">
+            <div class="news-list container">
+                <div class="container">
+                    <h2 style="font-size: 18px">LATEST NEWS</h2>
+                    <p style="font-size: 14px">新闻动态</p>
+                    <div class="news-left">
+
+                    </div>
+                </div>
+
+
+            </div>
+
+        </section>
+        <section id="Pagefive">
+            <div class="container-fluid">
+                <p>page1</p>
+            </div>
+
+        </section>
+        <section id="Pagesix">
+            <div class="container-fluid">
+                <p>page1</p>
+            </div>
+
+        </section>
+        <section id="Pageseven">
+            <div class="container-fluid">
+                <p>page1</p>
+            </div>
+
+        </section>
+
+
+
+    </div>
+    <script src="node_modules/jquery/dist/jquery.min.js">
+    </script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+
+
+    </script>
+
+
+</body>
+</html>
