@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="app.css">
+    <title>Javascript练习</title>
+</head>
+<body>
+    <div class="container">
+        <p id="pid">hello</p>
+        <div id="div" class="div">
+            背景颜色修改
+        </div>
+        <button id="btn">测试</button>
+        <p name="pn">Hello</p>
+        <p name="pn">Hello</p>
+        <p name="pn">Hello</p>
+        <p name="pn">Hello</p>
+        <p name="pn">Hello</p>
+        <a id="aid" title="得到了a标签的属性">hello</a>
+        <ul id="uid">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+
+        </ul>
+
+        <div id="dddd">
+            <p id="pid1">
+                div的p元素
+            </p>
+        </div>
+
+        <div id="exeinput">
+            <input id="txt" type="text">
+            <button id="btn3" type="button" value="按钮" onclick="demo3()">按钮</button>
+        </div>
+
+
+    </div>
+   <script>
+       function demo() {
+//           document.write("world");
+//           var nv=document.getElementById("pid").innerHTML="world";
+           document.getElementById("div").style.backgroundColor="blue";
+       }
+//       document.getElementById("btn").addEventListener("click",function () {
+//           alert("dom2级事件处理程序");
+//       });
+//       var btn=document.getElementById("btn")
+//       btn.onclick=function () {
+//           alert("dom0级事件处理程序");
+//       }
+//       if(btn.addEventListener){
+//           btn.addEventListener("click",demo);
+//       }else if(btn.attachEvent){
+//           btn.attachEvent("onclick",demo);
+//       }else {
+//           btn.onclick=demo();
+//       }
+//       document.getElementById("btn").addEventListener("click",showtype);
+//       function showtype(e) {
+//           alert(e.type);
+//           alert(e.relatedTarget);
+//
+//       }
+
+       function getName(){
+           //name相同则存储的是数组
+           var count=document.getElementsByTagName("p");
+           count[0].onclick=function () {
+               alert("dianji");
+           }
+           alert(count.length);
+           //可以使用这种方式来获取到数组中的元素
+           var p=count[2];
+           p.innerHTML="world";
+       }
+
+
+       function getAttr() {
+           var att=document.getElementById("aid");
+           var title=att.getAttribute("title");
+           alert(title);
+
+       }
+
+       function getChildNode() {
+           //注意chrome中空格也被当作了子节点元素
+           var ulnode=document.getElementById("uid");
+           var childNode=ulnode.childNodes;
+           alert(childNode.length);
+           alert(childNode[1].nodeType);//获取节点值
+           childNode[1].innerHTML="xiugai";
+       }
+
+       function getParentNode() {
+           var div=document.getElementById("pid1").parentNode;
+           alert(div.nodeName);
+           
+       }
+       function createNode() {
+           var body=document.body;
+           var input=document.createElement("input");
+           input.type="button";
+           input.value="按钮";
+           body.appendChild(input);
+
+       }
+
+       function addNode() {
+           var div=document.getElementById("dddd");
+           var node=document.getElementById("pid1");
+           var newnode=document.createElement("p");
+           newnode.innerHTML="插入的新的节点";
+           div.insertBefore(newnode,node);
+
+       }
+       addNode();
+
+       function removeNode() {
+           var div=document.getElementById("dddd");
+           var p=div.removeChild(div.childNodes[1]);
+
+       }
+//       removeNode();
+
+       function getSize() {
+           var width=document.documentElement.offsetWidth;
+           var height=document.documentElement.offsetHeight;
+           alert(width+","+height);
+
+       }
+//       getSize();
+
+       function demo2() {
+           try {
+               alert(str);
+           }catch (err){
+               alert(err);
+           }
+
+       }
+//       demo2();
+
+       function demo3() {
+           try {
+               var txt=document.getElementById("txt").value;
+               if(txt==""){
+                   //自定义异常
+                   throw "请输入";
+               }
+           }catch (err) {
+               alert(err);
+           }
+
+
+       }
+
+
+
+
+
+
+
+   </script>
+
+</body>
+</html>
