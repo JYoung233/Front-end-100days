@@ -1,0 +1,101 @@
+body {
+    width: 100%;
+    height:100%;
+    position: fixed;
+    background-color: #34495e;
+}
+.content {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    height: 160px;
+    overflow: hidden;
+    height: 160px;
+    font-family: 'Lato',sans-serif;
+    font-size: 35px;
+    line-height: 40px;
+    color: #ecf0f1;
+}
+
+.content_container {
+    font-weight: 600;
+    /*normal bold bolder lighter*/
+    overflow: hidden;
+    height: 40px;
+    padding: 0 40px;
+}
+
+.content_container:before {
+    /*在每个元素之前插入内容*/
+    content: '[';
+    left: 0;
+}
+
+.content_container:after {
+    content: ']';
+    position: absolute;
+    right: 0;
+}
+
+.content_container:before,.content_container:after {
+    position: absolute;
+    top:0;
+    color: #16a085;
+    font-size: 42px;
+    line-height: 40px;
+    animation: opacity 2s infinite;
+    -webkit-animation: opacity 2s infinite;
+}
+
+.content_container_text {
+    display: inline;
+    float: left;
+    margin: 0;
+}
+
+.content_container_list {
+    margin-top: 0;
+    padding-left: 110px;
+    text-align: left;
+    list-style: none;
+    animation: change 2s infinite;
+    -webkit-animation: change 2s infinite;
+}
+.content_container_item {
+    line-height: 40px;
+    margin: 0;
+}
+
+@-webkit-keyframes opacity {
+    0%,100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+@keyframes opacity {
+    0%,100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+@keyframes change {
+    0%,100% {
+        transform: translate3d(0,0,0);  }
+    43.8% {
+        transform: translate3d(0,-50%,0); }
+}
+
+@-webkit-keyframes change {
+    0%,100% {
+        transform: translate3d(0,0,0);  }
+    43.8% {
+        transform: translate3d(0,-50%,0); }
+}
+
