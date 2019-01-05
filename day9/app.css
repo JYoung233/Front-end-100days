@@ -1,0 +1,51 @@
+* {
+    margin:0;
+    padding:0;
+    font-size: 12px;
+}
+
+li,ul,img,a,div {
+    border: 0;
+    list-style: none;
+
+}
+
+div {
+    display: block;
+}
+
+a {
+    color: #333333;
+    text-decoration: none;
+    outline: none;
+}
+
+em {
+    font-weight: normal;
+}
+
+.ue-bar {
+    background-color: #222222;
+}
+
+.ue-bar-wrap {
+    width:980px;
+    height:70px;
+    overflow: hidden;
+    margin:0 auto;
+    position: relative;
+}
+
+.ue-bar-logo {
+    width: 134px;
+    height: 50px;
+    float: left;
+    padding-right: 10px;
+    padding-top: 8px;
+}
+
+.ue-bar-logo a {
+    display: inline-block;
+    width: 100%;
+    heigh
+}

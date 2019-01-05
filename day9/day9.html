@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Html5学习</title>
+</head>
+<body>
+    <script>
+//        function rangetest() {
+//            var html;
+//            showrange=document.getElementById("showrange");
+//            selection=document.getSelection();
+//            if(selection.rangeCount>0){
+//                html="您选取了"+ selection.rangeCount + "<内容<br/>";
+//                for(var i=0;i<selection.rangeCount;i++){
+//                    var range=selection.getRangeAt(i);
+//                    html+="第"+(i+1)+"段内容为："+range+"<br/>";
+//                }
+//                showrange.innerHTML=html;
+//            }
+//
+//        }
+//        function deleteRangeContent(onlyContent) {
+//            var div=document.getElementById("div");
+//            var rangeObj=document.createRange();
+//            if(onlyContent){
+//                rangeObj.selectNodeContents(div);
+//                rangeObj.deleteContents();
+//            }else {
+//                rangeObj.selectNode(div);
+//                rangeObj.deleteContents();
+//
+//            }
+//
+//        }
+//        function cloneRange() {
+//            var rang=document.createRange();
+//            rang.selectNodeContents(document.getElementById("div"));
+//            var rangeClone=rang.cloneRange();
+//            alert(rangeClone.toString());
+//
+//        }
+        function moveButton() {
+            var btn=document.getElementById("button");
+            var selection=document.getSelection();
+            if(selection.rangeCount>0){
+                var range=selection.getRangeAt(0);
+                range.insertNode(btn);
+            }
+
+        }
+    </script>
+    <div onmouseup="moveButton()" style="background-color: #e0a0b0;width: 300px;height: 50px">
+        selection对象与range对象的使用</div>
+    <button id="button">move</button>
+
+
+</body>
+</html>
